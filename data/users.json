@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1749657381819,
+    "fullName": "Ravula",
+    "email": "ravulanamratha98@gmail.com",
+    "phone": "8008690539",
+    "password": "123456789",
+    "education": "B.Tech",
+    "skills": "C,Html,java",
+    "experience": "Fresher",
+    "savedApplications": [
+      1749713719101,
+      1749718879023,
+      1749721427484,
+      1749719074716,
+      1749719188550,
+      1749723874274,
+      1749723920301,
+      1749724219788
+    ],
+    "jobsApplied": 1,
+    "resume": "1749728274422-resume.pdf"
+  },
+  {
+    "id": 1749659104492,
+    "fullName": "Ravula",
+    "email": "ravula@gmail.com",
+    "phone": "789456123",
+    "password": "123456",
+    "education": "a",
+    "skills": "a",
+    "experience": "a",
+    "savedApplications": []
+  },
+  {
+    "id": 1749660702547,
+    "fullName": "Ravula namratha",
+    "email": "ravulanamratha91@gmail.com",
+    "phone": "987456321",
+    "password": "12345678",
+    "education": "s",
+    "skills": "a",
+    "experience": "a"
+  }
+]
