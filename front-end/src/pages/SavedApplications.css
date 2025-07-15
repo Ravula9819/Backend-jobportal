@@ -1,0 +1,182 @@
+/* Layout Container */
+.dashboard-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.dashboard-navbar {
+  background-color: #004080;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 12px 12px;
+}
+
+.dashboard-navbar h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.dashboard-navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.dashboard-navbar li {
+  margin: 0;
+}
+
+.dashboard-navbar input[type="text"] {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.95rem;
+}
+
+.logout-btn {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: #e60000;
+}
+
+/* User Details */
+.dashboard-content {
+  margin: 2rem 0;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.user-details p {
+  margin: 0.6rem 0;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.edit-form input,
+.edit-form textarea {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.edit-form button {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: #0073e6;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-form button:hover {
+  background-color: #005bb5;
+}
+
+/* Listings */
+.listings {
+  margin-top: 2rem;
+}
+
+.listing-card {
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.listing-card:hover {
+  transform: translateY(-2px);
+}
+
+.listing-card h3 {
+  margin-bottom: 0.5rem;
+  color: #003366;
+}
+
+.listing-card p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+}
+
+.buttons,
+.listing-card button {
+  margin-top: 1rem;
+}
+
+.listing-card button {
+  margin-right: 0.7rem;
+  padding: 0.4rem 0.9rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  background-color: #0073e6;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.listing-card button:hover {
+  background-color: #005bb5;
+}
+
+.delete-btn {
+  background-color: #e60000;
+}
+
+.delete-btn:hover {
+  background-color: #b30000;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .dashboard-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .dashboard-navbar ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+  }
+
+  .listing-card {
+    padding: 1rem;
+  }
+
+  .edit-form input,
+  .edit-form textarea {
+    font-size: 0.95rem;
+  }
+}

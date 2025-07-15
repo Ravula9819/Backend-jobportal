@@ -1,0 +1,49 @@
+/* src/components/OpportunitySection.css */
+.opportunity {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #eef4f8;
+}
+
+.opportunity h2 {
+  font-size: 2rem;
+  color: #0f4c81;
+  margin-bottom: 10px;
+}
+
+.opportunity p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.opportunity-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  background-color: #0f4c81;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #093556;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #0f4c81;
+  color: #0f4c81;
+}
+
+.btn-outline:hover {
+  background-color: #0f4c81;
+  color: white;
+}

@@ -1,0 +1,23 @@
+.why-choose-us {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features-list li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #333;
+}

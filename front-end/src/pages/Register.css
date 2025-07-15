@@ -1,0 +1,88 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-color: #f4f7fa;
+  padding: 20px;
+}
+
+.register-form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #0f4c81;
+}
+
+.register-form input,
+.register-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.file-label {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.file-label input {
+  display: block;
+  margin-top: 8px;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0f4c81;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-form button:hover {
+  background-color: #093556;
+}
+
+.register-form p {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+.close-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #444;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+.login-form,
+.register-form,
+.postjob-form {
+  position: relative;
+}

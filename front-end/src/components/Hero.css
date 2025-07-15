@@ -1,0 +1,32 @@
+/* src/components/Hero.css */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background-color: #f8f9fa;
+  flex-wrap: wrap;
+}
+
+.hero-image img {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hero-content {
+  max-width: 500px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #0f4c81;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #333;
+}

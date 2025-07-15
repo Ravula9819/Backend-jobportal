@@ -1,0 +1,68 @@
+/* Container */
+.job-details {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem 2.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Heading */
+.job-details h2 {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  color: #004080;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+.job-details p {
+  margin: 0.6rem 0;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.job-details strong {
+  color: #222;
+}
+
+/* Apply Link */
+.job-details a {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: #0073e6;
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.job-details a:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .job-details {
+    padding: 1.5rem;
+    margin: 2rem 1rem;
+  }
+
+  .job-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .job-details p {
+    font-size: 0.95rem;
+  }
+
+  .job-details a {
+    font-size: 0.95rem;
+  }
+}

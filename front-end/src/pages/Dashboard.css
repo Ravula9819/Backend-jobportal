@@ -1,0 +1,240 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Navbar */
+.dashboard-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #003366;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-right {
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.search-input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  width: 200px;
+}
+
+.logout-btn {
+  background: #ff4d4d;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Content */
+.dashboard-content {
+  padding: 140px 20px 30px; /* moved down for fixed navbar */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Greeting */
+.greeting {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #ff4d4d;
+}
+
+/* User Info */
+.user-profile-section {
+  background: linear-gradient(to right, #e8e8ff, #d0d0f7); /* lighter gradient */
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.info-grid {
+  display: grid;
+ grid-template-columns: 3fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.info-grid p {
+  word-break: break-word;
+  font-size: 14px;
+}
+
+.info-grid a {
+  color: #4a00e0;
+}
+
+/* Edit Button */
+.edit-btn,
+.edit-form button {
+  background: #4a00e0;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Edit Form */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-form input,
+.edit-form textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Listings Section */
+.section-heading {
+  font-size: 22px;
+  margin: 20px 0 10px;
+}
+
+.listings-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.listing-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.listing-header h3,
+.listing-header span,
+.listing-card p {
+  word-break: break-word;
+  font-size: 14px;
+}
+
+.card-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card-actions button {
+  padding: 6px 10px;
+  border: none;
+  background: #4a00e0;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.card-actions .delete-btn {
+  background: #ff4d4d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .search-input {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .dashboard-content {
+    padding: 120px 15px 30px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .listings-container {
+    grid-template-columns: 1fr;
+  }
+  .greeting {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  padding-top: 150px;
+}
+
+}
